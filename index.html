@@ -1,82 +1,42 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Conexão Campo e Cidade</title>
-  <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Conexão Campo e Cidade</title>
+    <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header>
-    <h1>🌱 Conexão Campo e Cidade</h1>
-    <nav>
-      <button data-section="home" class="nav-btn active">Home</button>
-      <button data-section="problemas" class="nav-btn">Problemas</button>
-      <button data-section="solucoes" class="nav-btn">Soluções</button>
-      <button data-section="futuro" class="nav-btn">Futuro</button>
-      <button data-section="videos" class="nav-btn">Vídeos</button>
-    </nav>
-  </header>
+    <header>
+        <h1>🌱 Conexão Campo e Cidade</h1>
+        <nav>
+            <ul class="menu">
+                <li><button class="nav-btn" data-section="home">Home</button></li>
+                <li><button class="nav-btn" data-section="problemas">Problemas</button></li>
+                <li><button class="nav-btn" data-section="solucoes">Soluções</button></li>
+                <li><button class="nav-btn" data-section="futuro">Futuro</button></li>
+                <li><button class="nav-btn" data-section="videos">Vídeos</button></li>
+            </ul>
+        </nav>
+        <div class="zoom-controls">
+            <button id="zoom-in" aria-label="Aumentar Zoom">🔍 +</button>
+            <button id="zoom-out" aria-label="Diminuir Zoom">🔍 -</button>
+        </div>
+    </header>
 
-  <main>
-    <section id="home" class="section active">
-      <p>Conectar o campo à cidade para promover soluções para um futuro mais sustentável.</p>
-      <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=60" alt="Imagem do Campo" />
-      <div class="desmatamento-destaque">
-        <h2>🌳 Desmatamento: Um problema urgente</h2>
-        <p>O desmatamento é um dos maiores desafios para o meio ambiente e para as comunidades rurais e urbanas. <strong>Unir tecnologia e o campo</strong> é essencial para monitorar, controlar e buscar soluções sustentáveis para essa questão.</p>
-        <p>Com o uso de satélites, sensores IoT e aplicativos, produtores rurais e cidadãos urbanos podem colaborar para preservar as florestas, evitando desmatamento ilegal e promovendo reflorestamento.</p>
-      </div>
-    </section>
+    <main id="content">
+        <!-- Conteúdo carregado via JS -->
+    </main>
 
-    <section id="problemas" class="section">
-      <h2>🌾 Problemas Enfrentados no Campo e na Cidade</h2>
-      <ul>
-        <li>Desvalorização do Trabalho Rural: O trabalho rural é invisibilizado pela sociedade urbana.</li>
-        <li>Falta de Acesso à Tecnologia no Campo: Muitos produtores não têm acesso a internet e ferramentas digitais.</li>
-        <li>Desperdício de Alimentos: A falta de infraestrutura para escoamento causa grande desperdício de alimentos.</li>
-        <li>Fuga de Jovens do Campo: A migração de jovens para as cidades enfraquece o desenvolvimento rural.</li>
-      </ul>
-    </section>
+    <footer>
+        <div class="social-buttons">
+            <button class="social-btn" data-url="https://www.instagram.com" aria-label="Instagram">Instagram</button>
+            <button class="social-btn" data-url="https://www.facebook.com" aria-label="Facebook">Facebook</button>
+            <button class="social-btn" data-url="https://wa.me/55" aria-label="WhatsApp">WhatsApp</button>
+        </div>
+        <p>© 2025 Conexão Campo e Cidade. Todos os direitos reservados.</p>
+    </footer>
 
-    <section id="solucoes" class="section">
-      <h2>💡 Soluções Criativas para a Conexão Campo-Cidade</h2>
-      <ul>
-        <li>Apadrinhar um Produtor: Conectar consumidores urbanos com agricultores.</li>
-        <li>Conexão Jovens Urbanos e Rurais: Compartilhar habilidades tecnológicas entre jovens urbanos e agricultores.</li>
-        <li>Sistema de Aviso de Colheita: Notificar excedente de alimentos para consumidores urbanos.</li>
-        <li>Empreendedorismo Jovem no Campo: Incentivar o empreendedorismo para manter os jovens no campo.</li>
-      </ul>
-    </section>
-
-    <section id="futuro" class="section">
-      <h2>🌍 O Futuro da Conexão entre Campo e Cidade</h2>
-      <p>A integração entre o campo e a cidade é essencial para um futuro sustentável e justo. O uso consciente dos recursos naturais, aliado à tecnologia, será chave para a transformação.</p>
-    </section>
-
-    <section id="videos" class="section">
-      <h2>🎥 Vídeos sobre Conexão Campo e Cidade</h2>
-      <div class="video-links">
-        <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a>
-        <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">Facebook</a>
-        <a href="https://web.whatsapp.com" target="_blank" rel="noopener noreferrer">WhatsApp</a>
-      </div>
-    </section>
-  </main>
-
-  <footer>
-    <div class="social-buttons">
-      <button id="btnInstagram" aria-label="Instagram">📸 Instagram</button>
-      <button id="btnFacebook" aria-label="Facebook">📘 Facebook</button>
-      <button id="btnWhatsApp" aria-label="WhatsApp">💬 WhatsApp</button>
-    </div>
-    <div class="acessibilidade">
-      <button id="zoomIn" aria-label="Aumentar Zoom">🔍 Aumentar</button>
-      <button id="zoomOut" aria-label="Diminuir Zoom">🔍 Diminuir</button>
-    </div>
-    <p>© 2025 Conexão Campo e Cidade. Todos os direitos reservados.</p>
-  </footer>
-
-  <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
